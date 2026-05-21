@@ -20,8 +20,8 @@ const BOT_RESPONSES: Record<string, string> = {
   welcome: "Hi there! I am Prakhar's AI Assistant. Ask me anything about his technical stack, certifications, projects, or background! How can I help you today?",
   skills: "Prakhar is a strong backend developer! His core stack includes Node.js, Express.js, MongoDB, and MySQL. On the frontend, he builds beautiful UIs with React.js and Tailwind CSS. He also writes code in Java, Python, and JavaScript.",
   aws: "Prakhar is an AWS & AI Enthusiast! He is an AWS Certified Cloud Practitioner. He has deployed scalable multi-website systems on AWS EC2, S3, RDS, and CloudFront, and is deeply familiar with cloud network scaling and basic CI/CD pipelines.",
-  projects: "His three major projects are:\n1. Smart Shopping Cart (IoT - Arduino, ESP8266, RFID tracking)\n2. Multi Website Hosting on AWS (EC2, S3, RDS, CloudFront, Apache)\n3. CRM Ticket System (Node, Express, MongoDB, JWT auth, MVC architecture)",
-  hire: "Yes! Prakhar is a B.Tech Computer Science (IoT) undergraduate graduating in 2026. He is currently looking for Backend, Full Stack, or Cloud internships and junior roles! You can contact him at therockstarop9956@gmail.com.",
+  projects: "His four major projects are:\n1. Smart Shopping Cart (IoT - Arduino, ESP8266, RFID tracking)\n2. Multi Website Hosting on AWS (EC2, S3, RDS, CloudFront, Apache)\n3. CRM Ticket System (Node, Express, MongoDB, JWT auth, MVC architecture)\n4. Collaborative Task Manager (React, Node, Express, MongoDB, WebSockets)",
+  hire: "Yes! Prakhar is a B.Tech Computer Science (IoT) student graduating in 2026, working as a Backend & Full Stack Developer and AWS & AI Enthusiast. He is currently looking for Backend, Full Stack, or Cloud internships and junior roles! You can contact him at therockstarop9956@gmail.com.",
   default: "I understand! Prakhar is highly passionate about building highly scalable systems and intelligent applications. Feel free to contact him directly at therockstarop9956@gmail.com or call him at +91 8979513406!"
 };
 

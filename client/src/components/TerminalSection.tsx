@@ -21,14 +21,16 @@ const TerminalSection = () => {
     }
   ]);
   const inputRef = useRef<HTMLInputElement>(null);
-  const terminalEndRef = useRef<HTMLDivElement>(null);
+  const terminalBodyRef = useRef<HTMLDivElement>(null);
 
   const focusInput = () => {
     inputRef.current?.focus();
   };
 
   useEffect(() => {
-    terminalEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (terminalBodyRef.current) {
+      terminalBodyRef.current.scrollTop = terminalBodyRef.current.scrollHeight;
+    }
   }, [history]);
 
   const handleCommand = (cmd: string) => {
@@ -59,7 +61,7 @@ const TerminalSection = () => {
         output = (
           <div className="space-y-2 font-mono text-sm max-w-2xl leading-relaxed text-gray-300">
             <p>
-              <span className="text-white font-bold">Prakhar Shukla</span> is a backend-focused Computer Science undergraduate based in Hardoi, Uttar Pradesh, India.
+              <span className="text-white font-bold">Prakhar Shukla</span> is a Backend & Full Stack Developer and AWS & AI Enthusiast based in Hardoi, Uttar Pradesh, India.
             </p>
             <p>
               Specialises in designing scalable backend REST APIs, implementing cloud-powered infrastructures on AWS, and integrating intelligent AI architectures.
@@ -110,6 +112,11 @@ const TerminalSection = () => {
               <span className="text-white font-bold font-mono">3. CRM Ticket System (Full Stack)</span>
               <p className="text-gray-400">Service ticketing app with JWT auth, role-based access controls.</p>
               <p className="text-xs text-secondary">Tech: Node.js, Express.js, MongoDB, JWT</p>
+            </div>
+            <div className="border-l-2 border-primary pl-3">
+              <span className="text-white font-bold font-mono">4. Collaborative Task Manager (Full Stack)</span>
+              <p className="text-gray-400">Real-time Kanban agility board with custom WebSocket coordination.</p>
+              <p className="text-xs text-secondary">Tech: React.js, Node.js, Express.js, MongoDB, WebSockets</p>
             </div>
           </div>
         );
@@ -204,7 +211,7 @@ const TerminalSection = () => {
           </div>
 
           {/* Terminal Body */}
-          <div className="p-6 h-96 overflow-y-auto font-mono text-sm leading-relaxed text-gray-300 relative z-10 scrollbar-none space-y-4">
+          <div ref={terminalBodyRef} className="p-6 h-96 overflow-y-auto font-mono text-sm leading-relaxed text-gray-300 relative z-10 scrollbar-none space-y-4">
             {history.map((item, index) => (
               <div key={index} className="space-y-1">
                 {item.command !== 'welcome' && (
@@ -216,7 +223,6 @@ const TerminalSection = () => {
                 <div className="pl-2 text-gray-300 font-mono">{item.output}</div>
               </div>
             ))}
-            <div ref={terminalEndRef} />
             
             {/* Active Input Line */}
             <div className="flex items-center gap-2 pt-1">

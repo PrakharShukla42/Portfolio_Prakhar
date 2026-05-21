@@ -74,6 +74,25 @@ const projects: Project[] = [
     tech: ["Node.js", "Express.js", "MongoDB", "JWT Auth", "REST APIs", "MVC Paradigm"],
     github: "https://github.com/PrakharShukla42",
     live: "https://github.com/PrakharShukla42"
+  },
+  {
+    id: 4,
+    title: "Collaborative Task Manager",
+    category: "Full Stack Development",
+    duration: "May 2025 – Present",
+    image: "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?q=80&w=800&auto=format&fit=crop",
+    description: "Developed a premium, real-time collaborative task manager supporting agile boards, detailed subtasks, and analytics.",
+    fullDescription: "Built a robust project and task management dashboard designed to boost team efficiency. Implemented drag-and-drop kanban boards, real-time WebSocket collaborations, and detailed visual burn-down charts to manage tasks, schedules, and resource workloads securely.",
+    features: [
+      "Dynamic interactive Kanban board with clean drag-and-drop controls",
+      "Real-time team collaboration updates using WebSocket integrations",
+      "Detailed visual analytical graphs with clean burn-down charts",
+      "Secured custom API endpoints with JWT cookies and MVC standards",
+      "Comprehensive task priority tracking with customized tag labels"
+    ],
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "WebSockets", "Tailwind CSS"],
+    github: "https://github.com/PrakharShukla42",
+    live: "https://github.com/PrakharShukla42"
   }
 ];
 

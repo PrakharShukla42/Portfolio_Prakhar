@@ -37,7 +37,7 @@ const About = () => {
             className="md:col-span-7 space-y-6 text-textMuted leading-relaxed font-sans"
           >
             <p className="text-lg text-foreground">
-              Hello! I'm <span className="text-primary font-semibold">Prakhar Shukla</span>, a backend-focused Computer Science undergraduate deeply passionate about building scalable backend services, cloud systems, and intelligent solutions.
+              Hello! I'm <span className="text-primary font-semibold">Prakhar Shukla</span>, a Backend & Full Stack Developer and AWS & AI Enthusiast deeply passionate about building scalable backend services, cloud systems, and intelligent solutions.
             </p>
             <p>
               I am currently pursuing my <span className="text-secondary font-medium">Bachelor of Technology in Computer Science (IoT)</span> at GLA University, Mathura (graduating in 2026). Over the course of my studies, I have developed a strong foundation in Data Structures, Object-Oriented Programming (OOPS), API integration, and cloud-native architecture.
