@@ -100,9 +100,10 @@ const Hero = () => {
             <a href="#contact" className="btn-outline">
               Contact Me
             </a>
-            {/* Download Resume button points to a mock pdf or links directly */}
+            {/* Download Resume button points to the actual PDF */}
             <a 
-              href="https://github.com/PrakharShukla42" 
+              href="/Prakhar_Shukla_Resume.pdf" 
+              download="Prakhar_Shukla_Resume.pdf"
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn-outline flex items-center gap-2 cursor-pointer"
