@@ -1,40 +1,60 @@
 import { motion } from 'framer-motion';
-import { FaJava, FaPython, FaJs, FaNodeJs, FaReact, FaAws, FaLinux, FaGithub, FaHtml5, FaCss3Alt } from 'react-icons/fa';
-import { SiMongodb, SiMysql, SiExpress, SiJsonwebtokens, SiArduino } from 'react-icons/si';
+import { FaJava, FaPython, FaJs, FaNodeJs, FaReact, FaAws, FaLinux, FaGithub, FaHtml5, FaCss3Alt, FaCode } from 'react-icons/fa';
+import { SiMongodb, SiMysql, SiArduino } from 'react-icons/si';
 
 const skillCategories = [
+  {
+    title: "AWS & Cloud",
+    skills: [
+      { name: "Lambda & EC2", level: 90, icon: <FaAws className="text-orange-500 text-lg" /> },
+      { name: "ECS, EKS, S3", level: 85, icon: <FaAws className="text-orange-400 text-lg" /> },
+      { name: "IAM, RDS, VPC", level: 90, icon: <FaAws className="text-orange-600 text-lg" /> },
+      { name: "CloudFormation, GCP", level: 80, icon: <FaAws className="text-amber-500 text-lg" /> }
+    ]
+  },
   {
     title: "Programming Languages",
     skills: [
       { name: "Java", level: 85, icon: <FaJava className="text-red-500 text-lg" /> },
-      { name: "Python", level: 80, icon: <FaPython className="text-yellow-500 text-lg" /> },
-      { name: "JavaScript", level: 90, icon: <FaJs className="text-amber-400 text-lg" /> }
+      { name: "Python", level: 90, icon: <FaPython className="text-yellow-500 text-lg" /> },
+      { name: "JavaScript / TypeScript", level: 95, icon: <FaJs className="text-amber-400 text-lg" /> },
+      { name: "C++", level: 80, icon: <FaNodeJs className="text-blue-500 text-lg" /> }
     ]
   },
   {
-    title: "Backend Development",
+    title: "DevOps & CI/CD",
     skills: [
-      { name: "Node.js", level: 90, icon: <FaNodeJs className="text-green-500 text-lg" /> },
-      { name: "Express.js", level: 88, icon: <SiExpress className="text-gray-400 text-lg" /> },
-      { name: "REST APIs", level: 90, icon: <FaNodeJs className="text-emerald-400 text-lg" /> },
-      { name: "JWT Auth", level: 85, icon: <SiJsonwebtokens className="text-pink-500 text-lg" /> },
-      { name: "MVC Architecture", level: 85, icon: <FaNodeJs className="text-blue-400 text-lg" /> }
+      { name: "Docker & Kubernetes", level: 85, icon: <FaLinux className="text-blue-400 text-lg" /> },
+      { name: "Terraform", level: 80, icon: <FaLinux className="text-purple-500 text-lg" /> },
+      { name: "Jenkins", level: 85, icon: <FaNodeJs className="text-gray-300 text-lg" /> },
+      { name: "GitHub Actions", level: 90, icon: <FaGithub className="text-gray-200 text-lg" /> }
     ]
   },
   {
-    title: "Databases",
+    title: "AI & ML Integration",
     skills: [
-      { name: "MongoDB", level: 85, icon: <SiMongodb className="text-green-500 text-lg" /> },
-      { name: "MySQL", level: 80, icon: <SiMysql className="text-blue-500 text-lg" /> }
+      { name: "LangChain", level: 90, icon: <FaPython className="text-green-500 text-lg" /> },
+      { name: "OpenAI APIs", level: 95, icon: <FaNodeJs className="text-teal-400 text-lg" /> },
+      { name: "Vector Databases", level: 85, icon: <SiMongodb className="text-green-600 text-lg" /> },
+      { name: "Prompt Engineering", level: 95, icon: <FaCode className="text-gray-300 text-lg" /> }
     ]
   },
   {
-    title: "Cloud & DevOps",
+    title: "Web & Design Architecture",
     skills: [
-      { name: "AWS EC2 / S3", level: 85, icon: <FaAws className="text-orange-500 text-lg" /> },
-      { name: "AWS RDS / CDN", level: 80, icon: <FaAws className="text-orange-400 text-lg" /> },
-      { name: "Linux Administration", level: 78, icon: <FaLinux className="text-yellow-600 text-lg" /> },
-      { name: "Git & GitHub", level: 88, icon: <FaGithub className="text-gray-200 text-lg" /> }
+      { name: "Node.js & Express.js", level: 95, icon: <FaNodeJs className="text-green-500 text-lg" /> },
+      { name: "React.js & FastAPI", level: 90, icon: <FaReact className="text-cyan-400 text-lg" /> },
+      { name: "Microservices & REST APIs", level: 95, icon: <FaNodeJs className="text-emerald-400 text-lg" /> },
+      { name: "Redis, Nginx, Kafka", level: 80, icon: <FaLinux className="text-red-500 text-lg" /> }
+    ]
+  },
+  {
+    title: "Databases & OS",
+    skills: [
+      { name: "MySQL & PostgreSQL", level: 85, icon: <SiMysql className="text-blue-500 text-lg" /> },
+      { name: "MongoDB & DynamoDB", level: 90, icon: <SiMongodb className="text-green-500 text-lg" /> },
+      { name: "Linux & Ubuntu", level: 85, icon: <FaLinux className="text-yellow-600 text-lg" /> },
+      { name: "Git & Windows Server", level: 90, icon: <FaGithub className="text-gray-200 text-lg" /> }
     ]
   },
   {

@@ -18,11 +18,11 @@ const PRESET_PROMPTS = [
 
 const BOT_RESPONSES: Record<string, string> = {
   welcome: "Hi there! I am Prakhar's AI Assistant. Ask me anything about his technical stack, certifications, projects, or background! How can I help you today?",
-  skills: "Prakhar is a strong backend developer! His core stack includes Node.js, Express.js, MongoDB, and MySQL. On the frontend, he builds beautiful UIs with React.js and Tailwind CSS. He also writes code in Java, Python, and JavaScript.",
-  aws: "Prakhar is an AWS & AI Enthusiast! He is an AWS Certified Cloud Practitioner. He has deployed scalable multi-website systems on AWS EC2, S3, RDS, and CloudFront, and is deeply familiar with cloud network scaling and basic CI/CD pipelines.",
-  projects: "His four major projects are:\n1. Smart Shopping Cart (IoT - Arduino, ESP8266, RFID tracking)\n2. Multi Website Hosting on AWS (EC2, S3, RDS, CloudFront, Apache)\n3. CRM Ticket System (Node, Express, MongoDB, JWT auth, MVC architecture)\n4. Collaborative Task Manager (React, Node, Express, MongoDB, WebSockets)",
-  hire: "Yes! Prakhar is a B.Tech Computer Science (IoT) student graduating in 2026, working as a Backend & Full Stack Developer and AWS & AI Enthusiast. He is currently looking for Backend, Full Stack, or Cloud internships and junior roles! You can contact him at therockstarop9956@gmail.com.",
-  default: "I understand! Prakhar is highly passionate about building highly scalable systems and intelligent applications. Feel free to contact him directly at therockstarop9956@gmail.com or call him at +91 8979513406!"
+  skills: "Prakhar is a strong Solutions-oriented Software Engineer! His core stack includes Node.js, Express.js, MongoDB, React, Java, Python, and C++. He specializes in Cloud Architecture on AWS, integrating AI Workflows with LangChain/LLMs, and implementing strict DevOps CI/CD pipelines (Docker, Kubernetes).",
+  aws: "Prakhar is a certified AWS Cloud Specialist! He holds several certifications including AWS Cloud Practitioner and AWS Prompt Engineering. He has architected scalable multi-website systems on AWS EC2, S3, RDS, IAM, VPC, and CloudFront, utilizing Auto Scaling and robust CI/CD deployments.",
+  projects: "His 6 major projects include:\n1. Multi-Server Web Hosting Infrastructure (AWS EC2, S3, RDS)\n2. AI Agent Workflow Automation (LangChain, LLMs, Redis)\n3. Full-Stack Task Management System (Node, React, JWT)\n4. POSCO E-Commerce Food Delivery (MongoDB, Express, React, Node)\n5. Smart Shopping Cart (IoT - Arduino, ESP8266, RFID)\n6. CRM Ticket System (Node, MongoDB, JWT auth)",
+  hire: "Yes! Prakhar is a Software Engineer & Cloud Specialist graduating with a B.Tech in Computer Science & Engineering (CGPA: 7.65) in 2026. He recently interned at Ethara AI as an LLM Post Training Intern. He is open to internship and junior roles! Contact him at therockstarop9956@gmail.com.",
+  default: "I understand! Prakhar is highly passionate about building scalable cloud architectures, intelligent AI applications, and robust backend microservices. Feel free to contact him directly at therockstarop9956@gmail.com or call him at +91 8979513406!"
 };
 
 const AIChatbot = () => {

@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaDownload, FaAws, FaNodeJs, FaReact 
 import { SiMongodb } from 'react-icons/si';
 
 const Hero = () => {
-  const words = ["Backend Developer", "Full Stack Developer", "AWS & AI Enthusiast"];
+  const words = ["Software Engineer", "Cloud Specialist", "Backend Developer", "Full Stack Developer", "AI & ML Integrator", "DevOps Engineer", "AWS & AI Enthusiast"];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -84,7 +84,7 @@ const Hero = () => {
             transition={{ delay: 0.5 }}
             className="text-base md:text-lg text-textMuted mb-8 max-w-xl leading-relaxed font-sans"
           >
-            Backend Developer & Cloud Enthusiast building scalable applications, highly secure REST APIs, and modern cloud deployment configurations.
+            Solutions-oriented Software Engineer and Cloud Specialist architecting highly available AWS infrastructures, scalable backend systems, and advanced AI workflows.
           </motion.p>
           
           {/* Primary Buttons */}

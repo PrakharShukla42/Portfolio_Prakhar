@@ -61,13 +61,13 @@ const TerminalSection = () => {
         output = (
           <div className="space-y-2 font-mono text-sm max-w-2xl leading-relaxed text-gray-300">
             <p>
-              <span className="text-white font-bold">Prakhar Shukla</span> is a Backend & Full Stack Developer and AWS & AI Enthusiast based in Hardoi, Uttar Pradesh, India.
+              <span className="text-white font-bold">Prakhar Shukla</span> is a Solutions-oriented Software Engineer and Cloud Specialist based in Hardoi, Uttar Pradesh, India.
             </p>
             <p>
-              Specialises in designing scalable backend REST APIs, implementing cloud-powered infrastructures on AWS, and integrating intelligent AI architectures.
+              Specialises in designing scalable backend REST APIs, architecting highly available AWS infrastructure, and integrating advanced AI workflows and Large Language Models.
             </p>
             <p>
-              Education: B.Tech in Computer Science (IoT) at GLA University, Mathura (Graduating 2026, CGPA: 7.54).
+              Education: B.Tech in Computer Science & Engineering at GLA University, Mathura (Graduating 2026, CGPA: 7.65).
             </p>
           </div>
         );
@@ -77,16 +77,19 @@ const TerminalSection = () => {
         output = (
           <div className="space-y-3 font-mono text-sm text-gray-300">
             <div>
-              <span className="text-secondary font-bold">[Programming Languages]</span>: Java, Python, JavaScript
+              <span className="text-secondary font-bold">[AWS & Cloud]</span>: Lambda, EC2, ECS, EKS, S3, IAM, RDS, VPC, CloudFormation, GCP
             </div>
             <div>
-              <span className="text-secondary font-bold">[Backend Services]</span>: Node.js, Express.js, REST APIs, JWT, MVC
+              <span className="text-secondary font-bold">[Programming Languages]</span>: Java, Python, JavaScript, TypeScript, C++
             </div>
             <div>
-              <span className="text-secondary font-bold">[Databases]</span>: MongoDB, MySQL
+              <span className="text-secondary font-bold">[Architecture & Design]</span>: Microservices, REST APIs, Redis, Nginx, Kafka, Load Balancing
             </div>
             <div>
-              <span className="text-secondary font-bold">[Cloud & DevOps]</span>: AWS EC2, S3, RDS, CloudFront, Linux, Git, GitHub
+              <span className="text-secondary font-bold">[DevOps & CI/CD]</span>: Docker, Kubernetes, Terraform, Jenkins, GitHub Actions
+            </div>
+            <div>
+              <span className="text-secondary font-bold">[AI & ML Integration]</span>: LangChain, OpenAI APIs, Vector Databases, Prompt Engineering
             </div>
             <div>
               <span className="text-secondary font-bold">[IoT Hardware]</span>: Arduino Uno, Node MCU, ESP8266
@@ -99,24 +102,34 @@ const TerminalSection = () => {
         output = (
           <div className="space-y-4 font-mono text-sm text-gray-300">
             <div className="border-l-2 border-primary pl-3">
-              <span className="text-white font-bold font-mono">1. Smart Shopping Cart (IoT)</span>
+              <span className="text-white font-bold font-mono">1. Multi-Server Web Hosting Infrastructure</span>
+              <p className="text-gray-400">Architected a highly available cloud infrastructure with EC2, Auto Scaling, and RDS.</p>
+              <p className="text-xs text-secondary">Tech: AWS EC2, S3, RDS, CloudFront CDN, VPC, IAM</p>
+            </div>
+            <div className="border-l-2 border-primary pl-3">
+              <span className="text-white font-bold font-mono">2. AI Agent Workflow Automation Platform</span>
+              <p className="text-gray-400">Built scalable workflow builder mapping multi-agent AI pipelines natively.</p>
+              <p className="text-xs text-secondary">Tech: LangChain, LLMs, Redis, MongoDB, Node.js</p>
+            </div>
+            <div className="border-l-2 border-primary pl-3">
+              <span className="text-white font-bold font-mono">3. Full-Stack Task Management System</span>
+              <p className="text-gray-400">Engineered a scalable RESTful API backend facilitating task operations and RBAC.</p>
+              <p className="text-xs text-secondary">Tech: Node.js, Express.js, AWS, JWT, Docker</p>
+            </div>
+            <div className="border-l-2 border-primary pl-3">
+              <span className="text-white font-bold font-mono">4. POSCO E-Commerce Food Delivery Platform</span>
+              <p className="text-gray-400">Built responsive dynamic front-end and a robust NoSQL schema for handling complex orders.</p>
+              <p className="text-xs text-secondary">Tech: React.js, Node.js, MongoDB, Express.js</p>
+            </div>
+            <div className="border-l-2 border-primary pl-3">
+              <span className="text-white font-bold font-mono">5. Smart Shopping Cart (IoT)</span>
               <p className="text-gray-400">RFID-based scanning, ESP8266, real-time dashboard updates.</p>
               <p className="text-xs text-secondary">Tech: Arduino, Node MCU, HTML, CSS</p>
             </div>
             <div className="border-l-2 border-primary pl-3">
-              <span className="text-white font-bold font-mono">2. Multi Website Hosting on AWS (Cloud)</span>
-              <p className="text-gray-400">Apache server config, hosted multi-sites on single EC2, RDS, S3, CDN.</p>
-              <p className="text-xs text-secondary">Tech: AWS EC2, S3, RDS, CloudFront, Linux, Apache</p>
-            </div>
-            <div className="border-l-2 border-primary pl-3">
-              <span className="text-white font-bold font-mono">3. CRM Ticket System (Full Stack)</span>
+              <span className="text-white font-bold font-mono">6. CRM Ticket System (Full Stack)</span>
               <p className="text-gray-400">Service ticketing app with JWT auth, role-based access controls.</p>
               <p className="text-xs text-secondary">Tech: Node.js, Express.js, MongoDB, JWT</p>
-            </div>
-            <div className="border-l-2 border-primary pl-3">
-              <span className="text-white font-bold font-mono">4. Collaborative Task Manager (Full Stack)</span>
-              <p className="text-gray-400">Real-time Kanban agility board with custom WebSocket coordination.</p>
-              <p className="text-xs text-secondary">Tech: React.js, Node.js, Express.js, MongoDB, WebSockets</p>
             </div>
           </div>
         );

@@ -20,6 +20,82 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
+    title: "Multi-Server Web Hosting Infrastructure",
+    category: "Cloud & DevOps",
+    duration: "July 2024 – Aug 2024",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
+    description: "Architected a highly available, multi-tier cloud infrastructure on AWS leveraging EC2, Auto Scaling Groups, and Linux servers.",
+    fullDescription: "Architected a highly available, multi-tier cloud infrastructure on AWS leveraging EC2, Auto Scaling Groups, and Linux servers to efficiently manage fluctuating web traffic.",
+    features: [
+      "Architected highly available multi-tier cloud infrastructure on AWS",
+      "Leveraged EC2 and Auto Scaling Groups to manage fluctuating traffic",
+      "Secured network architecture with precise VPC subnets, Security Groups, and IAM roles",
+      "Integrated Amazon RDS for relational data persistence",
+      "Combined S3 and CloudFront CDN to accelerate global content delivery"
+    ],
+    tech: ["AWS EC2", "AWS S3", "AWS RDS", "CloudFront CDN", "VPC", "IAM", "Linux"],
+    github: "https://github.com/PrakharShukla42",
+    live: "https://github.com/PrakharShukla42"
+  },
+  {
+    id: 2,
+    title: "AI Agent Workflow Automation Platform",
+    category: "AI & ML Development",
+    duration: "Jan 2025 – Apr 2025",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format&fit=crop",
+    description: "Designed a scalable workflow builder empowering users to visually map and connect multi-agent AI execution pipelines.",
+    fullDescription: "Designed and developed a scalable workflow builder empowering users to visually map and connect multi-agent AI execution pipelines. Integrated LangChain and advanced LLM reasoning capabilities to automate complex, multi-step tasks natively.",
+    features: [
+      "Visually mapped multi-agent AI execution pipelines",
+      "Integrated LangChain and advanced LLM reasoning capabilities",
+      "Automated complex, multi-step tasks natively within the platform",
+      "Engineered robust state management using Redis",
+      "Implemented real-time execution tracking architectures with MongoDB"
+    ],
+    tech: ["LangChain", "LLMs", "Redis", "MongoDB", "Python", "Node.js"],
+    github: "https://github.com/PrakharShukla42",
+    live: "https://github.com/PrakharShukla42"
+  },
+  {
+    id: 3,
+    title: "Full-Stack Task Management System",
+    category: "Full Stack Development",
+    duration: "May 2025 – Present",
+    image: "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?q=80&w=800&auto=format&fit=crop",
+    description: "Engineered a scalable RESTful API backend using Node.js and Express, facilitating comprehensive task operations.",
+    fullDescription: "Engineered a scalable RESTful API backend using Node.js and Express, facilitating comprehensive task operations and user management. Deployed the full-stack containerized application to AWS.",
+    features: [
+      "Engineered scalable RESTful API backend for task operations",
+      "Implemented secure, role-based access control (RBAC) mechanisms",
+      "Integrated robust JWT authentication to isolate environments",
+      "Containerized full-stack application for reliable deployments",
+      "Established automated CI/CD pipelines and rigorous security on AWS"
+    ],
+    tech: ["Node.js", "Express.js", "AWS", "JWT", "Docker", "CI/CD"],
+    github: "https://github.com/PrakharShukla42",
+    live: "https://github.com/PrakharShukla42"
+  },
+  {
+    id: 4,
+    title: "POSCO E-Commerce Food Delivery Platform",
+    category: "Full Stack Development",
+    duration: "Nov 2023 – Dec 2023",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=800&auto=format&fit=crop",
+    description: "Built a responsive, dynamic front-end interface optimized for seamless menu navigation and cart state management.",
+    fullDescription: "Built a responsive, dynamic front-end interface optimized for seamless menu navigation, cart state management, and mobile accessibility. Architected a NoSQL database schema using MongoDB.",
+    features: [
+      "Responsive, dynamic front-end for seamless menu navigation",
+      "Optimized cart state management and mobile accessibility",
+      "Architected NoSQL database schema to handle dynamic restaurant data",
+      "Managed complex orders and user transactional history efficiently",
+      "Engineered rapid REST API endpoints for secure checkout flows"
+    ],
+    tech: ["React.js", "Node.js", "MongoDB", "Express.js", "REST APIs"],
+    github: "https://github.com/PrakharShukla42",
+    live: "https://github.com/PrakharShukla42"
+  },
+  {
+    id: 5,
     title: "Smart Shopping Cart",
     category: "IoT Development",
     duration: "Dec 2022 – Feb 2023",
@@ -38,26 +114,7 @@ const projects: Project[] = [
     live: "https://github.com/PrakharShukla42"
   },
   {
-    id: 2,
-    title: "Multi Website Hosting on AWS",
-    category: "Cloud & DevOps",
-    duration: "July 2024 – Aug 2024",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
-    description: "Configured resilient Apache environments hosting several production websites on a single scalable EC2 cloud instance.",
-    fullDescription: "Engineered scalable cloud web hosting systems on AWS. Used Apache Virtual Hosts to cleanly run multiple independent domains on a single Linux instance, managing secure configurations and global routing to minimize infrastructure costs.",
-    features: [
-      "Apache Virtual Host configuration for multi-site routing",
-      "Secure global database storage utilizing Amazon RDS MySQL nodes",
-      "Static assets and file caching optimization in Amazon S3 storage",
-      "Enhanced response latency with AWS CloudFront CDN distribution",
-      "Configured Auto Scaling policies and Elastic Load Balancing pipelines"
-    ],
-    tech: ["AWS EC2", "Amazon S3", "Amazon RDS", "CloudFront CDN", "Linux", "Apache Server"],
-    github: "https://github.com/PrakharShukla42",
-    live: "https://github.com/PrakharShukla42"
-  },
-  {
-    id: 3,
+    id: 6,
     title: "CRM Ticket System",
     category: "Full Stack Development",
     duration: "Jan 2025 – Apr 2025",
@@ -74,29 +131,10 @@ const projects: Project[] = [
     tech: ["Node.js", "Express.js", "MongoDB", "JWT Auth", "REST APIs", "MVC Paradigm"],
     github: "https://github.com/PrakharShukla42",
     live: "https://github.com/PrakharShukla42"
-  },
-  {
-    id: 4,
-    title: "Collaborative Task Manager",
-    category: "Full Stack Development",
-    duration: "May 2025 – Present",
-    image: "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?q=80&w=800&auto=format&fit=crop",
-    description: "Developed a premium, real-time collaborative task manager supporting agile boards, detailed subtasks, and analytics.",
-    fullDescription: "Built a robust project and task management dashboard designed to boost team efficiency. Implemented drag-and-drop kanban boards, real-time WebSocket collaborations, and detailed visual burn-down charts to manage tasks, schedules, and resource workloads securely.",
-    features: [
-      "Dynamic interactive Kanban board with clean drag-and-drop controls",
-      "Real-time team collaboration updates using WebSocket integrations",
-      "Detailed visual analytical graphs with clean burn-down charts",
-      "Secured custom API endpoints with JWT cookies and MVC standards",
-      "Comprehensive task priority tracking with customized tag labels"
-    ],
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "WebSockets", "Tailwind CSS"],
-    github: "https://github.com/PrakharShukla42",
-    live: "https://github.com/PrakharShukla42"
   }
 ];
 
-const categories = ["All", "Full Stack Development", "Cloud & DevOps", "IoT Development"];
+const categories = ["All", "Full Stack Development", "Cloud & DevOps", "AI & ML Development", "IoT Development"];
 
 const Projects = () => {
   const [filter, setFilter] = useState("All");

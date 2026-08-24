@@ -2,17 +2,38 @@ import { motion } from 'framer-motion';
 
 const certifications = [
   {
-    title: "AWS Certified Cloud Practitioner",
+    title: "AWS Cloud Practitioner Essentials",
     issuer: "Amazon Web Services (AWS)",
     date: "Aug 2024",
     image: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?q=80&w=400&auto=format&fit=crop",
     link: "https://github.com/PrakharShukla42"
   },
   {
-    title: "Foundation of Prompt Engineering",
+    title: "AWS Foundations of Prompt Engineering",
     issuer: "AWS & DeepLearning.AI",
     date: "Dec 2024",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=400&auto=format&fit=crop",
+    link: "https://github.com/PrakharShukla42"
+  },
+  {
+    title: "AWS Getting Started With IoT",
+    issuer: "Amazon Web Services (AWS)",
+    date: "Jan 2025",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=400&auto=format&fit=crop",
+    link: "https://github.com/PrakharShukla42"
+  },
+  {
+    title: "Cisco – Switching, Routing and Wireless",
+    issuer: "Cisco",
+    date: "2025",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=400&auto=format&fit=crop",
+    link: "https://github.com/PrakharShukla42"
+  },
+  {
+    title: "Cisco - Introduction to Networks",
+    issuer: "Cisco",
+    date: "2025",
+    image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=400&auto=format&fit=crop",
     link: "https://github.com/PrakharShukla42"
   },
   {

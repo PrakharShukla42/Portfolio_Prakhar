@@ -4,6 +4,15 @@ import { FaGraduationCap, FaCode, FaAws, FaUsers } from 'react-icons/fa';
 const experiences = [
   {
     id: 1,
+    role: "LLM Post Training Intern",
+    company: "Ethara AI",
+    duration: "Mar 2026 - May 2026",
+    icon: <FaCode className="text-xl text-secondary" />,
+    description: "Engineered LLM post-training evaluation pipelines, optimizing prompt structures to drastically improve instruction adherence. Conducted rigorous data analysis on AI outputs, contributing to a 15% increase in model performance. Spearheaded feedback loops and advanced prompt engineering for context-aware AI responses.",
+    tech: ["Large Language Models", "Prompt Engineering", "Data Analysis", "AI Evaluation Pipelines"]
+  },
+  {
+    id: 2,
     role: "AWS Cloud & DevOps Journey",
     company: "Cloud Architecture Learning & Deployment",
     duration: "Jul 2024 - Present",
@@ -12,7 +21,7 @@ const experiences = [
     tech: ["AWS EC2", "AWS S3", "AWS RDS", "CloudFront", "Linux", "Apache Server"]
   },
   {
-    id: 2,
+    id: 3,
     role: "Backend & Systems Lead",
     company: "GLA University IoT Projects",
     duration: "Jan 2023 - Jun 2024",
@@ -21,7 +30,7 @@ const experiences = [
     tech: ["Node.js", "Express.js", "MongoDB", "IoT Modules", "WebSockets"]
   },
   {
-    id: 3,
+    id: 4,
     role: "Core Technical Journey",
     company: "Data Structures, Algorithms & OOPS",
     duration: "Oct 2022 - Dec 2023",
@@ -30,13 +39,13 @@ const experiences = [
     tech: ["Java", "Python", "Data Structures", "Algorithms", "OOPS", "MVC"]
   },
   {
-    id: 4,
-    role: "Bachelor of Technology in CS (IoT)",
+    id: 5,
+    role: "Bachelor of Technology in CS & Eng",
     company: "GLA University, Mathura",
     duration: "2022 - 2026",
     icon: <FaGraduationCap className="text-xl text-teal-400" />,
-    description: "Pursuing specialized degree in Computer Science Engineering focusing on Internet of Things (IoT). Acquired a GPA of 7.54. Actively participated in cloud infrastructure labs, network administration, and hardware-software collaborative hackathons.",
-    tech: ["Computer Science", "IoT Hardware", "Cloud Computing", "Computer Networks"]
+    description: "Pursuing specialized degree in Computer Science Engineering. Acquired a CGPA of 7.65. Actively participated in cloud infrastructure labs, network administration, machine learning, and AI coursework.",
+    tech: ["Computer Science", "Machine Learning", "Data Science", "Artificial Intelligence"]
   }
 ];
 

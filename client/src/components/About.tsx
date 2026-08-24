@@ -2,10 +2,10 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   const stats = [
-    { label: 'Projects Completed', value: '3+ Major' },
-    { label: 'Technologies Known', value: '20+ Tools' },
-    { label: 'AWS & AI Certs', value: '3+' },
-    { label: 'Academic CGPA', value: '7.54' },
+    { label: 'Projects Completed', value: '4+ Major' },
+    { label: 'Technologies', value: '25+ Tools' },
+    { label: 'Certifications', value: '5+' },
+    { label: 'Academic CGPA', value: '7.65' },
   ];
 
   return (
@@ -37,13 +37,13 @@ const About = () => {
             className="md:col-span-7 space-y-6 text-textMuted leading-relaxed font-sans"
           >
             <p className="text-lg text-foreground">
-              Hello! I'm <span className="text-primary font-semibold">Prakhar Shukla</span>, a Backend & Full Stack Developer and AWS & AI Enthusiast deeply passionate about building scalable backend services, cloud systems, and intelligent solutions.
+              Hello! I'm <span className="text-primary font-semibold">Prakhar Shukla</span>, a Solutions-oriented Software Engineer and Cloud Specialist passionate about driving technical excellence, optimizing system performance, and delivering robust software solutions.
             </p>
             <p>
-              I am currently pursuing my <span className="text-secondary font-medium">Bachelor of Technology in Computer Science (IoT)</span> at GLA University, Mathura (graduating in 2026). Over the course of my studies, I have developed a strong foundation in Data Structures, Object-Oriented Programming (OOPS), API integration, and cloud-native architecture.
+              I am currently pursuing my <span className="text-secondary font-medium">Bachelor of Technology in Computer Science & Engineering (IoT focus)</span> at GLA University, Mathura (graduating in 2026, CGPA: 7.65). I serve as the General Secretary for the CSE Club. Over the course of my studies, I have developed a strong foundation in Data Structures, Object-Oriented Programming (OOPS), API integration, and cloud-native architecture.
             </p>
             <p>
-              My expertise lies in building resilient, highly secure REST APIs using Node.js, Express.js, and MongoDB, configured under clean MVC paradigms. I also enjoy working with cloud infrastructures, specifically configuring multi-site environments, CDN pipelines, and microservices on AWS EC2, S3, RDS, and CloudFront.
+              My expertise lies in building highly secure REST APIs (Node.js, Express.js, MongoDB), architecting resilient AWS infrastructure (EC2, ECS, S3, CloudFront), and integrating advanced AI workflows and LLMs into production applications. I also implement modern DevOps CI/CD pipelines using Docker, Kubernetes, and GitHub Actions.
             </p>
           </motion.div>
 
