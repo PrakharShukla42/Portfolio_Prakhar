@@ -148,32 +148,38 @@ const Projects = () => {
     <section id="projects" className="py-24 px-6 bg-surface/30 relative">
       <div className="container mx-auto max-w-6xl relative z-10">
         
-        {/* Header */}
+        {/* Futuristic Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">
-            Featured <span className="gradient-text">Projects</span>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-cyan-400/30 text-xs font-mono text-cyan-400 mb-3 backdrop-blur-md">
+            <span>REGISTRY // SECTION_05</span>
+          </div>
+          <h2 className="text-3xl md:text-5xl font-extrabold mb-4 font-mono tracking-tight text-white">
+            ENGINEERING <span className="gradient-text">SHOWCASE</span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
+          <p className="text-gray-400 font-mono text-xs sm:text-sm max-w-xl mx-auto mb-4">
+            // High-throughput distributed systems, AI agent workflow builders, and cloud infrastructure
+          </p>
+          <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 via-primary to-secondary mx-auto rounded-full shadow-neon-primary"></div>
         </motion.div>
 
         {/* Filters */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-3 mb-14 font-mono">
           {categories.map(cat => (
             <button
               key={cat}
               onClick={() => setFilter(cat)}
-              className={`px-6 py-2 rounded-full text-xs font-semibold tracking-wider transition-all duration-300 ${
+              className={`px-4 py-2 rounded-xl text-xs font-bold tracking-wider transition-all duration-300 ${
                 filter === cat 
-                  ? 'bg-primary text-white shadow-lg shadow-primary/30' 
-                  : 'bg-white/5 text-textMuted border border-white/5 hover:bg-white/10 hover:text-foreground'
+                  ? 'bg-gradient-to-r from-cyan-500 to-primary text-white shadow-neon-secondary border border-cyan-400/40' 
+                  : 'bg-white/5 text-gray-400 border border-white/5 hover:border-cyan-400/30 hover:text-white'
               }`}
             >
-              {cat}
+              [ {cat.toUpperCase()} ]
             </button>
           ))}
         </div>
@@ -181,7 +187,7 @@ const Projects = () => {
         {/* Project Grid */}
         <motion.div layout className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <AnimatePresence mode="popLayout">
-            {filteredProjects.map(project => (
+            {filteredProjects.map((project) => (
               <motion.div
                 key={project.id}
                 layout
@@ -191,47 +197,52 @@ const Projects = () => {
                 transition={{ duration: 0.3 }}
                 whileHover={{ y: -6 }}
                 onClick={() => setSelectedProject(project)}
-                className="glass-card overflow-hidden group cursor-pointer border border-white/5 hover:shadow-neon-primary-bright relative"
+                className="glass-card overflow-hidden group cursor-pointer border border-white/10 hover:border-cyan-400/50 hover:shadow-neon-secondary relative hud-corner"
               >
-                {/* Image Container */}
+                {/* Image Container with Scanline */}
                 <div className="relative h-48 overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent z-10"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10"></div>
                   <img 
                     src={project.image} 
                     alt={project.title} 
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <span className="absolute top-4 left-4 z-20 text-[10px] uppercase font-mono tracking-widest px-3 py-1 bg-black/60 backdrop-blur-md text-secondary border border-secondary/20 rounded-md">
-                    {project.category}
-                  </span>
+                  <div className="absolute top-3 left-3 z-20 flex items-center gap-2">
+                    <span className="text-[10px] uppercase font-mono tracking-widest px-2.5 py-1 bg-black/80 backdrop-blur-md text-cyan-400 border border-cyan-400/30 rounded-md font-bold">
+                      MOD://0{project.id}
+                    </span>
+                    <span className="text-[10px] uppercase font-mono text-gray-400 px-2 py-0.5 bg-black/60 rounded">
+                      {project.category}
+                    </span>
+                  </div>
                 </div>
                 
                 {/* Project Details */}
                 <div className="p-6 relative">
-                  <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-200">
+                  <h3 className="text-lg sm:text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors duration-200 font-mono">
                     {project.title}
                   </h3>
-                  <p className="text-textMuted text-xs leading-relaxed mb-6 font-sans line-clamp-3">
+                  <p className="text-gray-400 text-xs leading-relaxed mb-5 font-sans line-clamp-2">
                     {project.description}
                   </p>
                   
                   {/* Skill indicators */}
-                  <div className="flex flex-wrap gap-1.5 mb-6">
+                  <div className="flex flex-wrap gap-1.5 mb-5">
                     {project.tech.slice(0, 4).map((tech, i) => (
-                      <span key={i} className="text-[9px] font-semibold text-foreground/80 bg-white/5 border border-white/5 px-2 py-0.5 rounded font-mono">
+                      <span key={i} className="text-[9px] font-bold text-cyan-300 bg-white/5 border border-white/10 px-2 py-0.5 rounded font-mono">
                         {tech}
                       </span>
                     ))}
                     {project.tech.length > 4 && (
-                      <span className="text-[9px] font-semibold text-primary/70 bg-primary/5 px-2 py-0.5 rounded font-mono">
-                        +{project.tech.length - 4} more
+                      <span className="text-[9px] font-bold text-primary/90 bg-primary/10 px-2 py-0.5 rounded font-mono">
+                        +{project.tech.length - 4}
                       </span>
                     )}
                   </div>
                   
-                  <div className="flex items-center justify-between text-xs text-secondary font-mono tracking-wider font-bold border-t border-cardBorder pt-4">
-                    <span>EXPLORE DETAILS</span>
-                    <span>&rarr;</span>
+                  <div className="flex items-center justify-between text-xs text-cyan-400 font-mono tracking-wider font-bold border-t border-white/10 pt-3">
+                    <span>INSPECT MODULE SPECS</span>
+                    <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
                   </div>
                 </div>
               </motion.div>

@@ -78,27 +78,30 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-24 px-6 relative bg-surface/10 overflow-hidden">
+    <section id="contact" className="py-24 px-6 relative cyber-grid overflow-hidden">
       {/* Decorative Blur Spheres */}
-      <div className="absolute top-[20%] right-[-10%] w-[400px] h-[400px] bg-secondary/5 rounded-full filter blur-[120px] pointer-events-none z-0"></div>
-      <div className="absolute bottom-[10%] left-[-10%] w-[350px] h-[350px] bg-primary/5 rounded-full filter blur-[120px] pointer-events-none z-0"></div>
+      <div className="absolute top-[20%] right-[-10%] w-[450px] h-[450px] bg-secondary/10 rounded-full filter blur-[140px] pointer-events-none z-0"></div>
+      <div className="absolute bottom-[10%] left-[-10%] w-[450px] h-[450px] bg-primary/10 rounded-full filter blur-[140px] pointer-events-none z-0"></div>
 
       <div className="container mx-auto max-w-6xl relative z-10">
         
-        {/* Section Header */}
+        {/* Futuristic Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">
-            Get In <span className="gradient-text">Touch</span>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-cyan-400/30 text-xs font-mono text-cyan-400 mb-3 backdrop-blur-md">
+            <span>UPLINK // SECTION_08</span>
+          </div>
+          <h2 className="text-3xl md:text-5xl font-extrabold mb-4 font-mono tracking-tight text-white">
+            SECURE <span className="gradient-text">COMMUNICATIONS</span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
-          <p className="mt-6 text-textMuted max-w-xl mx-auto font-sans leading-relaxed text-sm md:text-base">
-            Have a project in mind, looking to hire, or just want to connect? Hit the form or reach out directly!
+          <p className="text-gray-400 font-mono text-xs sm:text-sm max-w-xl mx-auto mb-4">
+            // Establish an encrypted transmission channel for job opportunities, projects, or technical consulting
           </p>
+          <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 via-primary to-secondary mx-auto rounded-full shadow-neon-primary"></div>
         </motion.div>
 
         {/* Dual Column Layout */}
