@@ -111,11 +111,12 @@ router.post('/', async (req, res) => {
   try {
     const genAI = new GoogleGenerativeAI(apiKey);
     
-    // Choose model - gemini-1.5-flash is fast, capable, and cost-effective
-    const model = genAI.getGenerativeModel({
-      model: 'gemini-1.5-flash',
-      systemInstruction: SYSTEM_INSTRUCTION
-    });
+    const CANDIDATE_MODELS = [
+      'gemini-3.5-flash-lite',
+      'gemini-3.5-flash',
+      'gemini-3.8-flash',
+      'gemini-flash-latest'
+    ];
 
     // Format chat history for Gemini SDK if provided
     let contents = [];
@@ -132,16 +133,38 @@ router.post('/', async (req, res) => {
       parts: [{ text: message }]
     });
 
-    const result = await model.generateContent({
-      contents
-    });
+    let replyText = null;
+    let successfulModel = null;
 
-    const response = await result.response;
-    const replyText = response.text();
+    for (const modelName of CANDIDATE_MODELS) {
+      try {
+        const model = genAI.getGenerativeModel({
+          model: modelName,
+          systemInstruction: SYSTEM_INSTRUCTION
+        });
 
+        const result = await model.generateContent({ contents });
+        const response = await result.response;
+        replyText = response.text();
+        successfulModel = modelName;
+        break; // Successfully generated response!
+      } catch (err) {
+        console.warn(`Model ${modelName} failed or unavailable (${err.status || err.message}). Trying next...`);
+      }
+    }
+
+    if (replyText) {
+      return res.json({
+        reply: replyText,
+        source: `gemini-llm (${successfulModel})`
+      });
+    }
+
+    // If all models hit rate limit or temporary 503, use our rich knowledge engine
+    const fallbackAnswer = generateFallbackResponse(message);
     return res.json({
-      reply: replyText,
-      source: 'gemini-llm'
+      reply: fallbackAnswer,
+      source: 'knowledge-engine-fallback'
     });
   } catch (error) {
     console.error('Error querying Gemini API:', error.message || error);
