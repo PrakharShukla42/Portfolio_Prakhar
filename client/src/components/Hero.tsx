@@ -1,6 +1,6 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope, FaDownload, FaAws, FaNodeJs, FaCamera } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaDownload, FaAws, FaNodeJs } from 'react-icons/fa';
 import { SiDocker } from 'react-icons/si';
 import { Sparkles, Terminal, Activity, ShieldCheck } from 'lucide-react';
 
@@ -17,12 +17,9 @@ const Hero = () => {
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
 
-  // Profile photo state with localStorage persistence
-  const [profilePhoto, setProfilePhoto] = useState<string>(() => {
-    return localStorage.getItem('prakhar_profile_photo') || '/profile.jpg';
-  });
+  // Permanent profile photo from public directory (fallback to cyber avatar if not yet added)
+  const profilePhoto = '/profile.jpg';
   const [imageError, setImageError] = useState(false);
-  const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     let timer: number;
@@ -47,24 +44,6 @@ const Hero = () => {
 
     return () => clearTimeout(timer);
   }, [currentText, isDeleting, currentWordIndex]);
-
-  const handlePhotoUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        const base64String = reader.result as string;
-        setProfilePhoto(base64String);
-        setImageError(false);
-        try {
-          localStorage.setItem('prakhar_profile_photo', base64String);
-        } catch {
-          // If quota exceeded, just keep in state
-        }
-      };
-      reader.readAsDataURL(file);
-    }
-  };
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-28 pb-16 px-6 relative overflow-hidden cyber-grid">
@@ -228,15 +207,6 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="lg:col-span-5 flex justify-center items-center relative py-6"
         >
-          {/* Hidden File Input for Custom Photo Upload */}
-          <input
-            type="file"
-            ref={fileInputRef}
-            onChange={handlePhotoUpload}
-            accept="image/*"
-            className="hidden"
-          />
-
           <div className="relative w-[320px] h-[320px] sm:w-[380px] sm:h-[380px] md:w-[420px] md:h-[420px] flex items-center justify-center">
             
             {/* Outer Rotating HUD Ring 1 (Clockwise) */}
@@ -360,28 +330,6 @@ const Hero = () => {
                     </div>
                     <p className="font-mono text-sm font-bold text-white tracking-wide">PRAKHAR SHUKLA</p>
                     <p className="font-mono text-[10px] text-cyan-400 tracking-widest uppercase mt-0.5">Cloud & AI Engineer</p>
-                    
-                    {/* Upload button prompt */}
-                    <button
-                      onClick={() => fileInputRef.current?.click()}
-                      className="mt-3 px-3 py-1 rounded-full bg-primary/20 hover:bg-primary/40 border border-primary/40 text-[10px] font-mono text-white flex items-center gap-1.5 transition-all"
-                    >
-                      <FaCamera size={10} /> Upload Photo
-                    </button>
-                  </div>
-                )}
-
-                {/* Hover Overlay with Upload/Change Photo Button */}
-                {!imageError && (
-                  <div 
-                    onClick={() => fileInputRef.current?.click()}
-                    className="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center cursor-pointer text-white gap-2 z-40"
-                  >
-                    <div className="p-3 rounded-full bg-primary/30 border border-cyan-400 text-cyan-300">
-                      <FaCamera size={20} />
-                    </div>
-                    <span className="font-mono text-xs font-bold text-cyan-300">Change Photo</span>
-                    <span className="font-mono text-[9px] text-gray-400">Click to select image</span>
                   </div>
                 )}
 
