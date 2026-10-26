@@ -68,12 +68,12 @@ const Contact = () => {
     {
       icon: <FaMapMarkerAlt className="text-xl text-teal-400" />,
       title: "Current Location",
-      value: "Hardoi, Uttar Pradesh, India",
+      value: "Lucknow, India",
       actionText: "Open Map",
-      copyVal: "Hardoi, Uttar Pradesh, India",
+      copyVal: "Lucknow, India",
       fieldName: "location",
       isLink: true,
-      linkUrl: "https://maps.google.com/?q=Hardoi,UttarPradesh,India"
+      linkUrl: "https://maps.google.com/?q=Lucknow,India"
     }
   ];
 

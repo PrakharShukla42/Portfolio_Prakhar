@@ -92,7 +92,7 @@ const Footer = () => {
                 <FaEnvelope size={18} />
               </a>
             </div>
-            <p className="text-[11px] text-gray-500">GEO: 27.3989° N, 80.1311° E // Hardoi, India</p>
+            <p className="text-[11px] text-gray-500">GEO: 26.8467° N, 80.9462° E // Lucknow, India</p>
           </div>
           
         </div>

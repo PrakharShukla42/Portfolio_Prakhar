@@ -4,7 +4,7 @@ const PRAKHAR_PROFILE = {
   name: "Prakhar Shukla",
   title: "Solutions-oriented Software Engineer & Cloud Specialist",
   tagline: "Building scalable backend systems, cloud-powered applications, and intelligent AI workflows.",
-  location: "Hardoi, Uttar Pradesh, India",
+  location: "Lucknow, India",
   email: "therockstarop9956@gmail.com",
   phone: "+91 8979513406",
   github: "https://github.com/PrakharShukla42",
@@ -13,7 +13,7 @@ const PRAKHAR_PROFILE = {
   education: {
     university: "GLA University, Mathura",
     degree: "Bachelor of Technology (B.Tech) in Computer Science & Engineering",
-    duration: "2022 – 2026",
+    duration: "Aug 2022 – Jun 2026",
     cgpa: "7.65 / 10",
     coursework: [
       "Data Science and Analytics",
@@ -45,11 +45,12 @@ const PRAKHAR_PROFILE = {
       company: "Ethara AI",
       role: "LLM Post Training Intern",
       duration: "Mar 2026 – May 2026",
-      type: "Internship",
+      type: "Internship (Remote Gurugram, Haryana)",
       highlights: [
-        "Engineered LLM post-training evaluation pipelines, optimizing prompt structures to drastically improve user interaction and instruction adherence.",
-        "Conducted rigorous data analysis on AI-generated outputs, identifying edge cases and contributing to a 15% measurable increase in overall model performance.",
-        "Spearheaded the integration of systematic feedback loops and advanced prompt engineering techniques to ensure highly factual and context-aware AI responses."
+        "Evaluated 500+ prompts and LLM responses to assess factual accuracy, relevance, consistency, and user interaction quality, contributing to the development of AI systems.",
+        "Analyzed AI-generated outputs across multiple test scenarios, identifying edge cases and response inconsistencies in multi-person collaborative projects.",
+        "Developed and tested prompting strategies and feedback loops across 500+ prompt evaluations to assess improvements in factuality and relevance.",
+        "Applied principles of Artificial Intelligence, Large Language Models (LLMs), Prompt Engineering, and Response Quality Analysis."
       ]
     }
   ],

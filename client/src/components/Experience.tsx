@@ -11,14 +11,14 @@ const missions = [
     role: "LLM Post Training Intern",
     company: "Ethara AI",
     duration: "MAR 2026 – MAY 2026",
-    metricBadge: "+15% MODEL INSTRUCTION ADHERENCE",
+    metricBadge: "500+ PROMPTS EVALUATED",
     icon: <Sparkles className="text-xl text-cyan-400 animate-pulse" />,
-    summary: "Engineered LLM post-training evaluation pipelines, optimizing prompt structures to drastically improve user interaction and instruction adherence.",
+    summary: "Evaluated 500+ prompts and LLM responses to assess factual accuracy, relevance, consistency, and user interaction quality, contributing to production AI systems.",
     impacts: [
-      "Conducted rigorous data analysis on AI outputs, identifying edge cases and contributing to a 15% increase in model performance.",
-      "Spearheaded the integration of systematic feedback loops and advanced prompt engineering for context-aware, hallucination-resistant AI responses."
+      "Analyzed AI-generated outputs across multiple test scenarios, identifying edge cases and response inconsistencies in collaborative multi-person projects.",
+      "Developed and tested prompting strategies and feedback loops across 500+ prompt evaluations to assess improvements in factuality and relevance."
     ],
-    tech: ["Large Language Models", "Prompt Engineering", "Data Analysis", "Evaluation Pipelines", "Python"]
+    tech: ["Prompt Engineering", "Large Language Models (LLMs)", "LLM Evaluation", "Quality Analysis", "AIML"]
   },
   {
     id: 2,
